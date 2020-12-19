@@ -78,7 +78,7 @@ function setup() {
   traps.add(createTrap(1300));
   traps.add(createTrap(1325));
   traps.add(createTrap(1340));
-  traps.add(createTrap(1360));
+  traps.add(createTrap(1355));
 
   /*
   for (let x = 350; x < 2500; x += 230) {
