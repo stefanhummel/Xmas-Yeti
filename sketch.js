@@ -1,4 +1,4 @@
-const sceneWidth = 3000;
+const sceneWidth = 1000;
 const assetBase =
   "https://linz.coderdojo.net/uebungsanleitungen/programmieren/web/yeti-xmas/source/assets/";
 let sky, skyImage, yeti, traps, trapImage;
@@ -65,31 +65,24 @@ function setup() {
   yeti.addAnimation("dead", walkAnimation);
 
   traps = new Group();
-  /*
-  traps.add(createTrap(200));
-  traps.add(createTrap(220));
-  */
-  traps.add(createTrap(425));
-  traps.add(createTrap(450));
-  traps.add(createTrap(600));
-  traps.add(createTrap(675));
-  traps.add(createTrap(970));
-  traps.add(createTrap(1025));
-  traps.add(createTrap(1300));
-  traps.add(createTrap(1325));
-  traps.add(createTrap(1340));
-  traps.add(createTrap(1355));
 
   /*
   for (let x = 350; x < 2500; x += 230) {
      traps.add(createTrap(x));
   }
-*/
+  */
 
-  candy = createSprite(2700, height - 75 - trapImage.height * 1.0);
+  var trapPoints = [350, 510, 5200, 605, 610];
+  trapPoints.forEach(createNewTrap);
+
+  candy = createSprite(900, height - 75 - trapImage.height * 1.0);
   candy.addImage(candyImage);
   candy.setCollider("rectangle", 0, 0, 20, 50);
   candy.velocity.x = -1;
+}
+
+function createNewTrap(value) {
+  traps.add(createTrap(value));
 }
 
 function createTrap(x) {
