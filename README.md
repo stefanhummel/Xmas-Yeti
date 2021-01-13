@@ -1,13 +1,8 @@
 # Xmax Yeti
 
-<Autor:> Stefan Hummel
-<Datum:>18.12.2020
-<Vorlage:>https://linz.coderdojo.net
+<br>Autor:    Stefan Hummel
+<br>Datum:    18.12.2020
+<br>Vorlage:  https://linz.coderdojo.net
 
-
-{
-  autor: Stefan Hummel
-  datum: 18.12.2020
-}
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/p5-xmas-yeti-2020-12-18)
